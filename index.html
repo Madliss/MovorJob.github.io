@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jason's CV</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script src="jquery-3.2.1.min.js"></script>
+	<script src="bootstrap.min.js"></script>
+</head>
+<body>
+<div class="contain">
+<nav class="navbar navbar-default" role="navigation">
+	<div>
+		<ul class="nav navbar-nav">
+			<li class="me"><a href="#" class="link1">Jason Chen</a></li>
+			<li class="link"><a href="#part1" class="p1">个人简介</a></li>
+			<li class="link"><a href="#part2" class="p2">教育经历</a></li>
+			<li class="link"><a href="#part3" class="p3">相关技能</a></li>
+			<li class="link"><a href="#part4" class="p4">联系邮箱</a></li>
+		</ul>
+	<div>
+</nav>
+
+	<img src="me.png">
+	
+	<p id="name">陈 锋</p>
+	<p class="intro" id="introd">我是一个做事认真、有上进心的人。</p>
+	<p class="intro">有过一年留学经验，能够阅读英文文档，英语听说较好。</p>
+	<p class="intro">半年左右的前端开发经验，熟悉HTML,CSS,JavaScript。</p>
+	<p class="intro">了解响应式网页的开发，使用过JQuery、Bootstrap框架。</p>
+	<p class="intro">后端熟悉Java语言，服务器端熟悉Tomcat，熟悉MySQL，能够配合完成相关后端工作。</p>
+	
+</div>
+<div class="education">
+	<p>教育经历</p>
+	<ul class="time">
+		<li>2013.9 - 2016.7</li>
+		<li>------------------------------</li>
+		<li>2016.9 - 2017.5</li>
+	</ul>
+	<ul class="time">
+		<li><a href="http://www.ecit.edu.cn/">南昌东华理工大学</a></li>
+		<li>------------------------------</li>
+		<li><a href="https://www.ait.ie/">爱尔兰阿斯隆理工学院</a></li>
+	</ul>
+	<ul class="time">
+		<li>本科 软件工程专业</li>
+		<li>------------------------------</li>
+		<li>本科 软件工程专业</li>
+	</ul>
+</div>
+<div class="skills">
+	<p>工作技能</p>
+	<ul class="box">
+		<li class="title">语言</li>
+		<li>HTML</li>
+		<li>CSS</li>
+		<li>Javascript</li>
+		<li>Java</li>
+	</ul>
+	<ul class="box">
+		<li class="title">技术</li>
+		<li>Ajax</li>
+		<li>MySQL</li>
+		<li>代码托管</li>
+	</ul>
+	<ul class="box">
+		<li class="title">框架</li>
+		<li>JQuery</li>
+		<li>Bootstrap</li>
+	</ul>
+</div>
+<div class="contact">
+	<p id="ctitle">Just Be You</p>
+	Email:<a href="https://www.google.com/gmail/" class="email"> madlessc@gmail.com</a>
+	<p>Tel: 13576129126</p>
+	
+</div>
+<script type="text/javascript">
+	$('.p1').click(function(){$('html,body').animate({scrollTop: '0px'}, 800);});
+	$('.p2').click(function(){$('html,body').animate({scrollTop:$('.education').offset().top}, 800);});
+	$('.p3').click(function(){$('html,body').animate({scrollTop:$('.skills').offset().top}, 800);});
+	$('.p4').click(function(){$('html,body').animate({scrollTop:$('.contact').offset().top}, 800);});
+</script>
+</body>
+</html>
